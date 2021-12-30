@@ -49,8 +49,18 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 
+# set transparency in terminal(need xcompmbr e transset-df in arch repositors)
+# define the windows running and apply the setting
+#transset-df "0.80" --id "$WINDOWID" >/dev/null
+#running in the ~/.bashrc
+# composite manager
+xcompmgr &
+
 # open script of date
 /home/anon/Desktop/Scripts/xsetr.sh &
+
+# lock the screen of the computer
+~/Desktop/Scripts/slock_xautolock.sh &
 
 # program for set volume
 xbindkeys_config &
