@@ -1,2 +1,2 @@
 # dwm-setting
-setting about dwm' dock
+settings about dwm' dock
